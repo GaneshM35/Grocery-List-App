@@ -27,4 +27,8 @@ angular.module("groceryCtrlModule", [])
        return a * 2;
    };
    return calculations;
-});
+})
+
+.controller("GroceryCtrl2", ["$scope",function ($scope) {
+    $scope.secondDisplay = "This is Second Page Controller";
+}]);

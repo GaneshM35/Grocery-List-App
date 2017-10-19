@@ -1,0 +1,15 @@
+<hr/>
+<h1>{{ grocObject.title}}</h1>
+<h2>{{grocObject.subTitle}}</h2>
+<label>First Name :</label><input ng-model="grocObject.Firstname">
+<label>Last Name :</label><input ng-model="grocObject.Lastname">
+<p>Number : {{2 + 2}}</p>
+<p>String : {{grocObject.Firstname + " "+ grocObject.Lastname | uppercase}}</p>
+<P><B>Binding : {{grocObject.bindOutput | currency: "Rs ": "2"}}</B></P>
+
+<button ng-click="timesTwo()">Multiple</button>
+
+<br/><br/>
+<a href="#/displaySecond">Display Second Page</a>
+
+<gm-welcome-message></gm-welcome-message>
